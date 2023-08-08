@@ -1,0 +1,36 @@
+@@if (!context.centerLogo) {
+<ul class="navbar-nav">
+  } @@if (context.centerLogo) {
+  <div class="w-100 order-1 order-lg-0 d-lg-flex offcanvas-body">
+    <ul class="navbar-nav ms-lg-auto">
+      }
+      <li class="nav-item">
+        <a class="nav-link" href="#video-demo">Video Demo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#our-mission">Our Mission</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#publications">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#get-involved">Get Involved</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#our-team">Our Team</a>
+      </li>
+
+      @@if (context.centerLogo) {
+    </ul>
+    <!-- /.navbar-nav -->
+  </div>
+  <div class="w-100 order-3 order-lg-2 d-lg-flex offcanvas-body">
+    <ul class="navbar-nav me-lg-auto">
+      } @@if (context.centerLogo) {
+    </ul>
+    <!-- /.navbar-nav -->
+  </div>
+  } @@if (!context.centerLogo) {
+</ul>
+<!-- /.navbar-nav -->
+}
